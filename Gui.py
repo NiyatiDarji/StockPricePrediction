@@ -12,7 +12,7 @@ class Window:
     # Browse button click method : opens browse file dialog box
     def __browse(self):
         self.entry.config(state='normal')
-        self.file_name = filedialog.askopenfilename(filetype=(("CSV  files", "*.csv"), ("All Files", "*.*")))
+        self.file_name = filedialog.askopenfilename(filetypes=(("CSV  files", "*.csv"), ("All Files", "*.*")))
         self.input_text.set(self.file_name)
         self.entry.config(state='readonly')
 
